@@ -81,6 +81,52 @@ title 태그를 이용해서 툴팁을 만들 수 있음
 
 
  
+ 
+<table>
+태그 중에 어려운 측에 속함
+       <table border="1">
+       <tr>
+           <td>이름</td> 
+        </tr>
+        </table>
+테이블 자체는 cSS로 꾸며줌
+td = table data
+tr = table row
+
+예전에는 웹페이지 전체를 표로 잡고, 안에 박스단위로 다 표로 잡았음
+하지만 table은 레이아웃을 잡으라고 만든 태그가 아님.
+엑셀같은 정보구조를 만드는데 쓰는 태그임
+table로 짜면 html이 너저분하게 됨
+
+
+<thead></thead>
+<tbody></tbody>
+로 정보제목?과 내용을 구분해줌
+사람이 안하면 브라우저가 자동으로 함
+<td>태그는 <th>로 바꿔줄 수 있는데 이렇게하면 진하게 표시된다
+tfoot은 무조건 아래로 내려감
+
+
+
+
+
+
+<form>
+서버로 보내기위한 정보들을 입력하는 폼
+   아이디 : <input type="text" name=id">
+   비밀번호 : <input type="password" name="pwd">
+   제출버튼 <input type="submit">
+   <form action="http://localhost.php">
+form태그를 통해 로그인 정보를 어디로 보낼지 정할 수 있다.
+서버에 대해 몰라도 주소를 알면 됨
+name을 붙여서 보내면 서버에서 네임값이 붙어서 전송받게 됨
+
+value=""
+인풋폼에 뭔가 미리 적혀있도록 함
+textarea cols="50" row="10"
+여러 줄을 입력할 수 있는 폼인데 50글자의 폭과 10줄을 입력할 수 있는 크기로 지정
+
+
 
 
 
