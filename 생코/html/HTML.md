@@ -18,32 +18,6 @@ Hyper Text Markup Language의 약자
 <a>태그만 달면 아무런 변화가 없다. 정보가 불충분해서 URL을 달아줘야함
 <a href="블라블라"> 링크를 거는 태그 </a>
 <target="_blank"> 새창으로 여는 태그
-<<<<<<< HEAD:생코/html/HTML.md
-    <a target="_blank" href="블라블라"> 이렇게 달아도 됨
-    <title> 툴팁
-    
-<br>줄바꾸는 태그인데 닫는 태그가 아님(시각적인 의미만 있어서)
-
-        
-        
-        
-***태그를 중첩해서 사용하기
-목록을 구성할 때는 리스트 태그를 사용한다
-<li>태그는 보통 단독으로 쓰지않는다. list
-<ul>로 묶어주어 그룹핑한 효과를 낸다. unordered list
-<li>단독으로는 성격을 다르게 구분하는 효과를 낼 수 없다.
-<ol>은 숫자 리스트가 됨. ordered list
-ul태그는 li태그의 부모격이다
-li태그는 반드시 ul태그를 부모로 갖고있다
-
-
-
-<tilte>과 <meta charset>은 본문이 아닌 부가적인 정보를 넣는다
-검색 엔진들이 이걸 기준으로 검색을 한다
-보통 <head>에 들어가도록 약속되어있고 본문은 <body>에 들어간다
-
-html의 문서는 이런 구조를 가지고 있다
-=======
 <a target="_blank" href="블라블라"> 이렇게 달아도 됨</a>
 <title>툴팁</title>
 ```
@@ -63,7 +37,6 @@ html의 문서는 이런 구조를 가지고 있다
 html의 문서는 이런 구조를 가지고 있다.
 
 ```html
->>>>>>> f8f33f8dd81bdfafff39fc6d3f145f7fd6f99b44:생코/HTML.md
 <html>
     <head>
     </head>
@@ -106,8 +79,6 @@ html은 줄바꿈을 무시하기 때문에 브라우저에게 단락을 구분�
 `<p>`태그는 2줄의 줄바꿈이 되는데 `<br>`은 2번 입력하면 같은 모습이 됨
 그러나 `<br>`태그는 시각적인 걸 표현하는 거고, `<p>`는 하나읟 단락이라는 '정보'를 표현할 수 있다. css로 간격을 조정하는 게 나중에 더 좋을거다~
 
-
-
 ### `<img>`
 
 ```html
@@ -116,16 +87,9 @@ html은 줄바꿈을 무시하기 때문에 브라우저에게 단락을 구분�
 
 width="200" height="200" 이런 식으로 사이즈 변경도 가능
 
-<<<<<<< HEAD:생코/html/HTML.md
-<img>
-width="200" 
-height="200"
-이런 식으로 사이즈 변경도 가능, 퍼센트로 표현할 수도 있음
-=======
->>>>>>> f8f33f8dd81bdfafff39fc6d3f145f7fd6f99b44:생코/HTML.md
 alt : 이미지가 깨졌을 때 뜨는 대안문구
 title 태그를 이용해서 툴팁을 만들 수 있음
- 
+
 ### `<table>`
 
 태그 중에 어려운 측에 속함.
@@ -160,7 +124,6 @@ table로 짜면 html이 너저분하게 됨.
 `<td>`태그는 `<th>`로 바꿔줄 수 있는데 이렇게하면 진하게 표시된다.
 tfoot은 무조건 아래로 내려감.
 
-
 ### `<form>`
 
 서버로 보내기위한 정보들을 입력하는 폼.
@@ -183,40 +146,38 @@ name을 붙여서 보내면 서버에서 네임값이 붙어서 전송받게 됨
 <textarea cols="50" row="10"> </textarea>
 ```
 
-<<<<<<< HEAD:생코/html/HTML.md
-<select></select>
-드롭다운or콤보박스로 만들 수 있음
-<option>
-그 안에 선택할 수 있는 내용으로 만듦
-            <select name="color"> 서버에서 받을 때 이름 name
-                <option value="red">붉은색</option> 서버에서 받을 때 이름 value로 지정
-
-
-
-
-
-<input type="button">
-    <input type="submit" value="전송하기">
-    <input type="button" value="버튼이름">
-    이름은 value로 바꿀 수 있음
-    둘다 같은 모양새를 가지게 되지만, submit은 페이지를 이동하게 되고, button은 페이지를 이동하지 않음.
-    html만 쓸 때는 button태그가 별로 쓸모가 없지만, 이 뒤에 자바스크립트를 붙여서 사용할 때 좋음 (버튼을 누르면 알럿창이 뜬다던가.)
-    <input type="reset">
-    사용자가 입력한 정보가 초기화됨
-    
-    
-    
-
-
-
-<hidden field>
-서버로 데이터를 전송해야하는데 ui가 필요없거나 몰래 보내야할 때 쓴다.
-
-    
-    
-
-=======
 여러 줄을 입력할 수 있는 폼인데 50글자의 폭과 10줄을 입력할 수 있는 크기로 지정.
->>>>>>> f8f33f8dd81bdfafff39fc6d3f145f7fd6f99b44:생코/HTML.md
+
+### `<select></select>`
+
+드롭다운 or 콤보박스로 만들 수 있음.
+
+```html
+<option>val1</option> <!--그 안에 선택할 수 있는 내용으로 만듦. -->
+<select name="color"> <!-- 서버에서 받을 때 이름 name -->
+    <option value="red">붉은색</option> <!-- 서버에서 받을 때 이름 value로 지정 -->
+    <option value="green">초록색</option>
+</select>
+<!-- 버튼들 -->
+<input type="button">
+<input type="submit" value="전송하기">
+<input type="button" value="버튼이름">
+```
+
+이름은 value로 바꿀 수 있음.  
+둘다 같은 모양새를 가지게 되지만, submit은 페이지를 이동하게 되고, button은 페이지를 이동하지 않음.  
+html만 쓸 때는 button태그가 별로 쓸모가 없지만, 이 뒤에 자바스크립트를 붙여서 사용할 때 좋음 (버튼을 누르면 알럿창이 뜬다던가.)
+
+```html
+<input type="reset">
+```
+
+사용자가 입력한 정보가 초기화됨.
+
+```html
+<input type="hidden">
+```
+
+서버로 데이터를 전송해야하는데 ui가 필요없거나 몰래 보내야할 때 쓴다.
 
 -HTML의 변천사와 통계까지 봄
