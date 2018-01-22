@@ -180,4 +180,18 @@ html만 쓸 때는 button태그가 별로 쓸모가 없지만, 이 뒤에 자바
 
 서버로 데이터를 전송해야하는데 ui가 필요없거나 몰래 보내야할 때 쓴다.
 
--HTML의 변천사와 통계까지 봄
+
+## lable
+이름표를 달아주는 태그.
+`` <lable for="id_txt">text</lable>:
+                <input id="id_txt" type="text" name="id" value="default value">
+    for로 이름을 달아주고, input id에도 동일한 이름을 달아주어 구분되는 이름을 준다.
+    이렇게 되면 text라는 레이블을 선택하더라도 input박스에 커서가 생긴다.
+    
+            <p>
+            <lable>
+            text:
+            <input type="text" name="id" value="default value">
+            </lable>
+            </p>
+    이런 식으로 lable을 감싸게 되면 굳이 for이나 id를 주지 않아도 됨
