@@ -44,3 +44,26 @@ active가 제일 밑으로
 :visited - 방문한 적이 있는 링크
 :hover - 마우스를 롤오버 했을 때 
 :active - 마우스를 클릭했을 때
+
+## 다양한 선택자
+A,B  둘다 선택하는 것
+*  웹페이지에 있는 모든 태그
+A *  A의 모든 태그
+A+B는 A의 옆에 있는 B가 선택됨. 바로 옆에 있는 것만 선택됨
+A~B A에 인접해있는 B의 모든 것
+A>B 엘리먼트의 직계자손을 선택한다. B중에 A의 바로 직계인 것만 선택된다.
+B A:first-child B밑에 있는 A중에 첫번째로 등장하는 것을 선택
+A:only-child 형제자매가 있는 애들은 선택되지 않고, 온니 차일드들만 선택된다
+A:last-child 제일 뒤에 있는 엘리먼트 (.table>*:last-child)
+plate:nth-child(3)  plate의 3번째 차이들
+:nth-last-child(A) 뒤에서부터 숫자를 셈
+:nth-of-type(A) A번째 등장하는 타입, odd와 even로 짝수/홀수 적용할 수도 있음
+:nth-of-type(An+B) n의 변수는 컴퓨터가 넣는다. 
+:nth-of-type(2n) 을 넣으면 2,4,6,8 등으로 선택된다.
+
+특수한 선택자들 중에 4번째 강의는 다음에 들어야겠음.
+
+
+
+## 속성에 대한 통계
+https://developer.microsoft.com/en-us/microsoft-edge/platform/usage/
