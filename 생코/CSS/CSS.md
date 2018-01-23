@@ -67,3 +67,26 @@ plate:nth-child(3)  plate의 3번째 차이들
 
 ## 속성에 대한 통계
 https://developer.microsoft.com/en-us/microsoft-edge/platform/usage/
+
+
+
+## font-size
+단위는 크게 3가지인데 px / em / rem.
+rem은 최근 추가된 단위.
+px은 절대적인 크기, em와 rem은 상대적인 가변적인 크기이다.
+오늘날에는 다른 걸 써야하는 이유가 분명하지 않으면 rem을 쓰면 된다고 보면 된다. = 폰트크기를 조정할 수 있는 사용자의 권리
+사용자가 브라우저의 폰트 크기를 키웠을 때 px은 바뀌지않고 em은 rem은 바뀐다.
+
+## Color
+color name, hex, rgb으로 구성됨
+https://www.w3schools.com/css/css_colors.asp
+
+
+## font-align
+left
+right
+center
+justify : 자간이 가변적으로 바뀌면서 양옆이 균등하게 분배된다
+
+
+
