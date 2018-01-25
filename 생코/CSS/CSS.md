@@ -90,3 +90,48 @@ justify : 자간이 가변적으로 바뀌면서 양옆이 균등하게 분배�
 
 
 
+## font-family
+``
+font-family: arial, verdana, "Helvetica Neue" serif monospace;
+font-weight: bold;
+line-height: 2;
+ 
+글자마다 가변폭이 있는데, 정보를 다루거나 할 때 고정폭이 필요할 때 monospace
+font-weight의 기본값은 1.2
+line-height는 줄과 줄 사이의 간격. px을 줄 수도 있다. 하지만 상대적인 수치를 사용하는 것을 권장한다.
+폰트에 관한 프로퍼티는 순서를 지켜서 작성해야한다.
+font-style 
+font-variant 
+font-weight 
+font-size/line-height 
+font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit; 
+
+
+## 웹폰트
+폰트를 서버에서 다운로드하는 방식. 
+한글같은 경우는 용량이 상당히 크다
+구글폰트에서 @import 부분은 html head부분에 넣는다
+style쪽에 specify in CSS를 넣는다
+
+font face genertator라는 것을 통해서 웹폰트로 변환한다
+다양한 브라우저에 대응할 수 있는 폰트를 만들어준다
+@font-face라는 것을 통해 폰트파일에 대한 설명을 나열하고 정의한다
+font-family에 동일하게 적어줘야한다.
+(아직 로컬 폰트를 정확하게 어떻게 쓴다는 건지 이해못하겠음)
+
+
+## 상속
+주석쓰는 법 /* */
+부모가 하는 걸 자식이 물려받는 게 효율적일 수 있다.
+많은 것들 중에 몇개만 다르다면, 몇개에 id를 줘서 변경하는 게 더 효율적.
+검사에서 보면 inherited from html이라는 것을 보고 상속받았다는 걸 확인할 수 있다.
+속성 모두가 상속되는 것은 아니다. 
+예를 들어 font color는 상속되지만 border는 상속되지않는다.
+
+https://www.w3.org/TR/CSS21/propidx.html
+css2의 여러 속성을 볼 수 있다.
+
+## Stylish
+CSS를 수정하거나, 남이 수정한 디자인을 내 컴퓨터에 적용할 수 있는 플러그인
+플러그인을 통해 사이트를 커스터마이징할 수 있다.
+디스케이딩으로 다른 cSS때문에 적용이 안된다면, cSS 뒤에 !Important라고 붙인다.
