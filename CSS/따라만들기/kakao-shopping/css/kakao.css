@@ -74,7 +74,7 @@ h1 {
     float: left;
     line-height: 60px;
     font-size: 15px;
-    content: "\003E";
+    content: '\003E';
 }
 
 .left li a,
@@ -101,7 +101,7 @@ h1 {
 
 .right span {
     padding: 0 10px 0 10px;
-    color: #e5e5e5;
+    color: #E5E5E5;
 }
 
 .right img {
@@ -180,7 +180,7 @@ h1 {
     width: 860px;
     float: right;
     display: block;
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #E5E5E5;
 }
 
 .button-area button {
@@ -209,6 +209,7 @@ h1 {
     position: absolute;
     margin-top: 930px;
     margin-left: 1570px;
+
 }
 
 .top-button img {
@@ -217,7 +218,7 @@ h1 {
 
 .footer-top {
     display: block;
-    border-top: 1px solid #d4d4d4;
+    border-top: 1px solid #D4D4D4;
     margin-top: 1020px;
 }
 
@@ -251,7 +252,7 @@ h1 {
 }
 
 .footer-bottom {
-    background-color: #1e1e1e;
+    background-color: #1E1E1E;
     clear: both;
 }
 
@@ -262,17 +263,31 @@ h1 {
     margin-top: 10px;
     font-size: 13px;
     width: 300px;
-    color: #aeaeae;
+    color: #AEAEAE;
 }
 
-.footer-bottom-text a {
+.footer-bottom-text {
+    color: orange;
+}
+
+.footer-bottom-text li {
     text-decoration: none;
     display: inline-block;
     float: left;
     font-size: 12px;
-    color: #aeaeae;
     margin-top: 28px;
     margin-right: 23px;
+}
+
+.footer-bottom-text img {
+    width: 7px;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.footer-bottom-text li:nth-child(3) {
+    font-weight: 800;
+    color: red;
 }
 
 .dropbtn {
@@ -280,7 +295,7 @@ h1 {
     border: none;
     margin-top: 27px;
     background-color: Transparent;
-    color: #aeaeae;
+    color: #AEAEAE;
     border-bottom: 1px solid #494949;
     padding-bottom: 7px;
 }
@@ -296,16 +311,15 @@ h1 {
 .dropup-content {
     display: none;
     position: absolute;
-    /* bottom: 50px; */
+    bottom: 50px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    background-color: white;
 }
 
 /* Links inside the dropup */
 .dropup-content a {
-    color: #aeaeae;
+    color: #AEAEAE;
     text-decoration: none;
     display: block;
 }
@@ -318,10 +332,15 @@ h1 {
 
 /* Change color of dropup links on hover */
 .dropup-content a:active {
-    background-color: white;
+    background-color: #ddd
 }
 
 /* Show the dropup menu on hover */
 .dropup:active .dropup-content {
     display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:active .dropbtn {
+    background-color: #2980B9;
 }
