@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
 
 body {
@@ -26,6 +27,8 @@ a {
     height: 66px;
     background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
+    overflow: hidden;
+    z-index: 100;
 }
 
 #header img {
@@ -56,7 +59,8 @@ a {
     font-size: 15px;
 }
 
-#header ul li button {
+#header ul li button,
+.num5 .container .devide button {
     background: #3182F6;
     padding: 8px 15px;
     font-size: 15px;
@@ -72,5 +76,122 @@ a {
 
 
 #content {
+    padding-top: 148px;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+p {
+    font-size: 17px;
+    text-align: center;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.num1 .img1 {
+    display: block;
+    width: 280px;
+    margin: 64px auto 0 auto;
+    box-shadow: 0px 5px 60px #e4e4e4;
+    position: relative;
+}
+
+.num2 {
+    background-color: #F9F9FB;
+    width: 100%;
+    /* position: absolute; */
+    /* z-index: -1; */
+    margin-top: -240px;
+}
+
+.num2 img {
+    margin: 455px auto 115px 100px;
+    display: inline-block;
+    width: 265px;
+}
+
+.text-right1 {
+    width: 350px;
+    display: inline;
+    float: right;
+    margin: 500px 18px auto;
+}
+
+h3 {
+    font-size: 26px;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.text-right p {
+    text-align: left;
+}
+
+.num3 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.num3 .container img {
+    width: 320px;
+    float: right;
     margin-top: 100px;
+    box-shadow: 0px 5px 30px #00000012;
+}
+
+.text-left {
+    width: 350px;
+    float: left;
+    margin-top: 160px;
+    margin-left: 70px;
+}
+
+.text-left p,
+.text-left h3 {
+    text-align: right;
+}
+
+.text-left button {
+    float: right;
+    margin-top: 15px;
+    background-color: #f2f2f2;
+    padding: 8px 16px;
+    border: 1px solid #f2f2f2;
+    border-radius: 3px;
+}
+
+.text-left button a {
+    color: #404d80;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+
+.num4 {
+    background-color: #F9F9FB;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 120px;
+}
+
+.num4 img {
+    width: 380px;
+    float: left;
+    margin-bottom: 130px;
+}
+
+.text-right {
+    width: 350px;
+    float: right;
+    margin: 65px 40px auto;
+}
+
+.devide {
+    width: 370px;
+    display: inline-block;
 }
