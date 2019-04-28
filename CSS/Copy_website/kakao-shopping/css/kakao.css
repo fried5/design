@@ -16,23 +16,46 @@ body {
     width: 100%;
 }
 
+img {
+    vertical-align: middle;
+}
+
 .container {
     width: 1160px;
     margin: 0 auto;
 }
 
-.header-top {
+
+/* 헤더(nav) 부분 */
+
+.header-top,
+.header-bottom {
     width: 100%;
-    height: 60px;
+    height: 61px;
     border-bottom: 1px solid #e5e5e5;
 }
 
-h1 {
-    float: left;
-    line-height: 60px;
+h1,
+.header-top-menu li,
+.header-top-lauage li,
+.left,
+.right {
+    line-height: 61px;
 }
 
-.header-top img {
+h1,
+.header-top-menu li,
+.left {
+    float: left;
+}
+
+.header-top-lauage li,
+.right,
+.text-box {
+    float: right;
+}
+
+h1 img {
     width: 68px;
 }
 
@@ -40,73 +63,37 @@ h1 {
     margin-left: 310px;
 }
 
+.header-top-menu li {
+    display: block;
+    padding: 0 15px 0 15px;
+}
+
 .header-top-menu li:hover {
     border-bottom: 2px solid black;
 }
 
-.header-top-menu li {
-    display: block;
-    float: left;
-    padding: 0 15px 0 15px;
-    line-height: 60px;
-}
-
 .header-top-menu img {
     width: 15px;
-    vertical-align: middle;
-    padding-bottom: 3px;
-    padding-left: 5px;
+    padding: 0 3px 0 5px;
 }
 
 .header-top-lauage li {
-    float: right;
-    line-height: 60px;
     padding-left: 15px;
 }
 
-.header-top-lauage .header-top-lauage-light {
-    font-weight: 300;
-}
-
-.header-bottom {
-    width: 100%;
-    height: 60px;
-    border-bottom: 1px solid #e5e5e5;
-    position: relative;
-}
-
-.left {
-    float: left;
-    line-height: 60px;
-    font-size: 15px;
-    content: '\003E';
-}
-
-.left li a,
-.left .header-bottom-light {
+.header-font-light {
     color: #666666;
+    font-weight: 300;
 }
 
-.header-bottom-light {
-    font-weight: 300;
+.left li,
+.right li {
+    display: inline-block;
+    font-size: 15px;
 }
 
 .left span {
     padding: 0 5px 0 5px;
-}
-
-.right {
-    float: right;
-    line-height: 60px;
-}
-
-.left li {
-    display: inline-block;
-}
-
-.right li {
-    display: inline-block;
-    font-size: 15px;
 }
 
 .right span {
@@ -116,25 +103,26 @@ h1 {
 
 .right img {
     height: 17px;
-    padding-bottom: 3px;
-    padding-left: 5px;
-    vertical-align: middle;
+    padding: 0 0 3px 5px;
 }
 
-#content .main-image {
-    background-image: url("/images/content-image.png");
-    background-size: 100%;
+
+/* 메인 이미지 */
+.main-image {
     width: 100%;
     height: 610px;
+    background-image: url("/images/content-image.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-#content .main-image img {
+.main-image img {
     position: absolute;
     margin-top: 80px;
     height: 40px;
 }
 
-#content .main-image h2 {
+.main-image h2 {
     position: absolute;
     margin-top: 150px;
     height: 40px;
@@ -145,6 +133,8 @@ h1 {
     text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
 }
 
+
+/* 콘텐츠 디테일 부분*/
 .content-detail h3 {
     display: inline-block;
     margin-top: 80px;
@@ -154,33 +144,35 @@ h1 {
 }
 
 .content-detail>img {
-    margin-top: 80px;
+    margin: 80px 0 45px 0;
     display: block;
     width: 860px;
     height: 480px;
     float: right;
-    margin-bottom: 45px;
 }
 
-.content-detail .text-box-all {
+.text-box-all {
     width: 860px;
     float: right;
 }
 
-.text-box {
-    float: right;
+.text-box-all .text-box,
+.text-box-right {
     display: inline-block;
     width: 390px;
     margin-bottom: 45px;
+}
+
+.text-box-right {
     margin-right: 40px;
 }
 
-.text-box h4 {
+.text-box-all h4 {
     font-size: 16px;
     margin-bottom: 20px;
 }
 
-.text-box p {
+.text-box-all p {
     font-size: 16px;
     font-weight: 300;
     line-height: 27px;
@@ -211,6 +203,7 @@ h1 {
     width: 8px;
     height: 15px;
     margin-left: 140px;
+    line-height: 70px;
 }
 
 .top-button {
@@ -219,13 +212,13 @@ h1 {
     position: absolute;
     margin-top: 930px;
     margin-left: 1570px;
-
 }
 
 .top-button img {
     height: 35px;
 }
 
+/* 푸터 */
 .footer-top {
     display: block;
     border-top: 1px solid #D4D4D4;
@@ -245,7 +238,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.light {
+.footer-light {
     font-size: 12px;
     font-weight: 300;
     margin-bottom: 10px;
@@ -266,17 +259,6 @@ h1 {
     clear: both;
 }
 
-.footer-bottom p {
-    display: inline-block;
-    color: white;
-    margin-bottom: 35px;
-    margin-top: 10px;
-    font-size: 13px;
-    width: 300px;
-    color: #AEAEAE;
-}
-
-
 .footer-bottom-text a {
     text-decoration: none;
     display: inline-block;
@@ -289,13 +271,22 @@ h1 {
 
 .footer-bottom-text img {
     width: 7px;
-    vertical-align: middle;
     padding-left: 5px;
 }
 
 .footer-bottom-text span {
     font-weight: 800;
     color: white;
+}
+
+.footer-bottom p {
+    display: inline-block;
+    color: white;
+    margin-bottom: 35px;
+    margin-top: 10px;
+    font-size: 13px;
+    width: 300px;
+    color: #AEAEAE;
 }
 
 .dropbtn {
@@ -335,11 +326,10 @@ h1 {
 .dropbtn img {
     width: 12px;
     padding-left: 95px;
-    vertical-align: middle;
 }
 
 /* Change color of dropup links on hover */
-.dropup-content a:active {
+.dropup-content a: {
     background-color: #ddd
 }
 
