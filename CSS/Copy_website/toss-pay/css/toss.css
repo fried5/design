@@ -18,7 +18,7 @@ a {
 }
 
 .container {
-    width: 847px;
+    width: 840px;
     margin: 0 auto;
 }
 
@@ -68,7 +68,7 @@ a {
     color: white;
     vertical-align: center;
     border-color: #3182F6;
-    border-radius: 5px;
+    border-radius: 4px;
     font-weight: 600;
 }
 
@@ -162,15 +162,11 @@ h3 {
     background-color: #f2f2f2;
     padding: 8px 16px;
     border: 1px solid #f2f2f2;
-    border-radius: 3px;
-}
-
-.text-left button a {
-    color: #404d80;
+    border-radius: 4px;
+    color: #4f5777;
     font-size: 15px;
     font-weight: 900;
 }
-
 
 .num4 {
     background-color: #F9F9FB;
@@ -180,18 +176,35 @@ h3 {
 }
 
 .num4 img {
-    width: 380px;
+    width: 420px;
     float: left;
-    margin-bottom: 130px;
+    margin-bottom: 80px;
 }
 
 .text-right {
-    width: 350px;
+    width: 310px;
     float: right;
-    margin: 65px 40px auto;
+    margin: 75px 50px auto;
 }
 
 .devide {
+    margin-top: 80px;
     width: 370px;
     display: inline-block;
+}
+
+.devide p {
+    width: 200px;
+    text-align: left;
+    display: block;
+    float: left;
+}
+
+.devide h3 {
+    display: block;
+}
+
+.devide button {
+    float: right;
+    margin-top: -20px;
 }
