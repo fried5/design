@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
 
@@ -8,13 +8,13 @@ body {
     width: 100%;
 }
 
-
 ul {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+    color: #5C6476;
 }
 
 .container {
@@ -25,7 +25,7 @@ a {
 #header {
     width: 100%;
     height: 66px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     position: fixed;
     overflow: hidden;
     z-index: 100;
@@ -69,7 +69,7 @@ a {
     vertical-align: center;
     border-color: #3182F6;
     border-radius: 4px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* header end */
@@ -88,7 +88,6 @@ h2 {
 
 p {
     font-size: 17px;
-    text-align: center;
     line-height: 25px;
     font-weight: 400;
 }
@@ -99,6 +98,10 @@ p {
     margin: 64px auto 0 auto;
     box-shadow: 0px 5px 60px #e4e4e4;
     position: relative;
+}
+
+.num1 p {
+    text-align: center;
 }
 
 .num2 {
@@ -178,7 +181,7 @@ h3 {
 .num4 img {
     width: 420px;
     float: left;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 }
 
 .text-right {
@@ -188,15 +191,15 @@ h3 {
 }
 
 .devide {
-    margin-top: 80px;
-    width: 370px;
     display: inline-block;
+    margin: 80px 0px 160px 0px;
+    width: 360px;
+    height: 120px;
 }
 
 .devide p {
-    width: 200px;
-    text-align: left;
     display: block;
+    text-align: left;
     float: left;
 }
 
@@ -207,4 +210,66 @@ h3 {
 .devide button {
     float: right;
     margin-top: -20px;
+}
+
+.left {
+    margin-right: 50px;
+}
+
+.right {
+    border-left: 1px solid #D6D6DD;
+    padding-left: 50px;
+}
+
+.num6 h4 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.num6 .img_container {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.num6 .company_logo ul li {
+    display: inline-block;
+}
+
+.num6 .company_logo img {
+    width: 80px;
+    padding: 15px;
+    float: left;
+}
+
+
+/* footer start */
+footer {
+    background: #FAFAFC;
+    padding: 60px 0px;
+    margin-top: 120px;
+}
+
+h5 {
+    font-size: 15px;
+    color: #454F5D;
+    margin-bottom: 20px;
+}
+
+footer address {
+    display: inline;
+    font-size: 13px;
+    font-style: normal;
+    color: #454F5D;
+    line-height: 15px;
+}
+
+footer address a {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+footer address span {
+    padding: 0px 5px;
 }
