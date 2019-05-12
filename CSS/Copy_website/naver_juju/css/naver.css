@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&subset=korean');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* layout */
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 75px;
+    overflow: hidden;
+
+}
+
+header h1 {
+    display: inline-block;
+    float: left;
+    line-height: 75px;
+    margin-left: 40px;
+}
+
+header ul {
+    display: inline-block;
+    margin-left: 330px;
+    line-height: 75px;
+}
+
+header ul li a {
+    color: #333;
+    padding: 0 30px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+header .header_right {
+    display: inline-block;
+    float: right;
+    line-height: 75px;
+    margin-right: 40px;
+}
+
+header .header_right img {
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+header .header_right a {
+    font-size: 12px;
+    color: #333;
+}
+
+header .header_right a:nth-child(3) {
+    margin-right: 30px;
+}
+
+header .header_right span {
+    padding: 0 5px;
+    font-size: 12px;
+    color: #979797;
+}
+
+/* content */
+.content .map {
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+.content .map ul,
+.content .map span {
+    display: inline-block;
+    float: left;
+}
+
+.content .map ul li {
+    float: left;
+}
+
+.content .map ul li a,
+.content .map span {
+    color: #979797;
+    font-size: 11px;
+}
+
+.content .map span {
+    padding: 4px 10px 0 10px;
+}
+
+.content .container {
+    overflow: hidden;
+}
+
+.content .container h2 {
+    text-align: center;
+    margin-top: 45px;
+    font-weight: 800;
+    font-size: 38px;
+}
+
+.content .container ul {
+    display: table;
+    margin: 40px auto 35px auto;
+}
+
+.content .container ul li,
+.content .container span {
+    float: left;
+    text-align: center;
+}
+
+.content .container span {
+    padding: 0 28px;
+    color: #B0B7C2;
+}
+
+
+.content .container ul li a {
+    color: #B0B7C2;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.content .container ul li:nth-child(1) a {
+    color: #333;
+    border-bottom: 2px solid #06C63C;
+    box-sizing: border-box;
+}
+
+.content .main_img {
+    width: 100%;
+    height: 350px;
+    background: url(../background.png) center no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.table .container .table_left {
+    float: left;
+    display: inline-block;
+}
+
+.table .container .table_left h3 {
+    line-height: 25px;
+}
+
+.table .container .table_left p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.table .container .table_right {
+    float: right;
+    overflow: hidden;
+}
+
+.table .container .table_right table {
+    width: 860px;
+    border-top: 2px solid #333;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    line-height: 55px;
+}
+
+.table .container .table_right table thead {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    text-align: left;
+    font-size: 15px;
+}
+
+.table .container .table_right table thead tr th:first-child {
+    width: 70%;
+}
+
+.table .container .table_right table tbody {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.table .container .table_right table tbody tr td {
+    border-bottom: 1px solid #E8E8E8;
+    color: #8E8E93;
+}
+
+.table .container .table_right table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.table .container .table_right table thead tr th:last-child,
+.table .container .table_right table tbody tr td:last-child,
+.table .container .table_right table tfoot tr td:last-child {
+    text-align: right;
+}
+
+.table .container .table_right table tfoot {
+    font-size: 15px;
+    border-top: 1px solid #333;
+}
+
+.table .container .table_right table tfoot tr td {
+    font-weight: 500;
+}
+
+.table .container .table_right table tfoot tr td:last-child {
+    font-size: 20px;
+}
+
+.table .container .table_right p {
+    float: right;
+    color: #878890;
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.table .container .table_right p img {
+    width: 16px;
+    vertical-align: middle;
+}
+
+/* footer */
+footer {
+    height: 160px;
+    background: #F8F9FA;
+}
+
+footer ul {
+    display: inline-block;
+    margin-top: 70px;
+}
+
+footer ul li {
+    float: left;
+}
+
+footer ul li a {
+    color: #999999;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+footer ul li p {
+    display: inline;
+}
+
+footer ul li img {
+    width: 70px;
+    margin-left: 40px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+footer ul .footer_right {
+    float: right;
+}
+
+/* 
+footer ul .footer_right img {
+    float: right;
+} */
