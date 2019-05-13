@@ -47,10 +47,31 @@ header ul {
 
 header ul li a {
     color: #333;
-    padding: 0 30px;
+    margin: 0 30px;
     font-weight: 700;
     font-size: 15px;
+    padding-bottom: 10px;
+    transition: width 0.3s;
 }
+
+header ul li a:hover {
+    /* animation: ani 0.5s infinite;
+    animation-play-state: running; */
+    border-bottom: 2px solid #01C73C;
+    width: 100px;
+
+}
+
+/* 
+@keyframes ani {
+    0% {
+        left: -5;
+    }
+
+    100% {
+        left: 100px;
+    }
+} */
 
 header .header_right {
     display: inline-block;
@@ -129,7 +150,9 @@ header .header_right span {
 
 .content .container span {
     padding: 0 28px;
-    color: #B0B7C2;
+    color: rgb(223, 223, 223);
+    font-weight: 100;
+    font-size: 20px;
 }
 
 
@@ -233,14 +256,17 @@ header .header_right span {
 }
 
 .table .container .table_right p img {
-    width: 16px;
+    width: 2px;
     vertical-align: middle;
+    padding-right: 10px;
 }
 
 /* footer */
 footer {
+    width: 100%;
     height: 160px;
     background: #F8F9FA;
+    overflow: hidden;
 }
 
 footer ul {
@@ -248,33 +274,49 @@ footer ul {
     margin-top: 70px;
 }
 
+/* 
 footer ul li {
     float: left;
-}
+} */
 
-footer ul li a {
+footer ul li a,
+footer ul li span {
     color: #999999;
     font-size: 14px;
     font-weight: 400;
 }
 
+footer ul li span {
+    margin: 0 5px;
+    color: #dfdfdf;
+}
 
 footer ul li p {
     display: inline;
+    color: #999999;
+    font-size: 13px;
+    padding-left: 240px;
 }
 
-footer ul li img {
+footer ul li>img {
     width: 70px;
     margin-left: 40px;
     margin-right: 15px;
     vertical-align: middle;
 }
 
-footer ul .footer_right {
+
+footer ul a:last-child {
+    display: inline;
     float: right;
+    margin-left: 510px;
+    color: #333;
 }
 
-/* 
-footer ul .footer_right img {
-    float: right;
-} */
+
+footer ul a img {
+    display: inline-block;
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
